@@ -1,9 +1,14 @@
-import requests
-from bs4 import BeautifulSoup
+#import google
+#import beautifulsoup
 
-url = "https://www.kozakdev.com/contact"
-r = requests.get(url)
+#search (query, tld='com', lang='eng', num=10, start=0, stop=None, pause=2.0)
+try:
+    from googlesearch import search
+except ImportError:
+    print("No module named 'google' found")
 
-soup = BeautifulSoup(r.content, 'html5lib')
-print(soup.prettyfy()
-//test
+#tosearch
+query = "kozak development"
+
+for j in search(query, tld="com", num=10, stop=10, pause=2.0):
+    print(j)
