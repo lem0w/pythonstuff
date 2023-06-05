@@ -11,5 +11,5 @@ for term in search_terms:
      None,
     webbrowser.BackgroundBrowser("C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe")) #Rewards are only on Edge
     webbrowser.get('edge').open_new_tab(url)
-time.sleep(30)
+time.sleep(60)
 os.system("taskkill /im msedge.exe /f")
